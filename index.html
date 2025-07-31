@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Athera Strategic Input Console</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px 20px;
+      background-color: #2c3e50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .signature {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #555;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h2>🔍 Athera Strategic Input Console</h2>
+  
+  <label for="accessCode">🔐 Access Code</label>
+  <input type="password" id="accessCode" placeholder="Enter secure access code" required />
+
+  <label for="entryTitle">📌 Entry Title</label>
+  <input type="text" id="entryTitle" placeholder="e.g., Ukraine Ceasefire Analysis" required />
+
+  <label for="entryType">🧭 Entry Type</label>
+  <select id="entryType">
+    <option>Strategic Insight</option>
+    <option>Diplomatic Observation</option>
+    <option>Early Warning</option>
+    <option>Initiative Proposal</option>
+  </select>
+
+  <label for="entryContent">📝 Description</label>
+  <textarea id="entryContent" rows="6" placeholder="Describe your entry..." required></textarea>
+
+  <label for="confidential">🔒 Classification</label>
+  <select id="confidential">
+    <option>Confidential</option>
+    <option>Internal</option>
+    <option>Public Summary</option>
+  </select>
+
+  <button onclick="alert('Entry submitted!')">Submit Entry</button>
+
+  <div class="signature">
+    With ethical partnership — <br/>
+    <strong>Salah Mourad & Athera</strong><br/>
+    ICCSSM – London | Executive Console
+  </div>
+</body>
+</html>
